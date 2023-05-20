@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleIndex.css">
+    <script src="../JavaScript/scriptIndex.js" ></script>
+    <title>LinkedOUT</title>
+    <link rel="icon" type="image/x-icon" href="../Images/linkedOut.png">
+</head>
+<body onLoad="API('https://www.themuse.com/api/public/jobs?page='+parseInt(70*Math.random()+1))">
+    <header class="image-container">
+        <img src="../Images/linkedOut.png" width="5.5%" height="5.5%" alt="linkedOUT">
+        <img src="../Images/menu.png" id="menu" width="3.5%" height="3.5%" alt="Menu" style="float:right" onClick="openNav()" onMouseOver="document.getElementsByClassName('menu-text')[0].style.opacity=1" onMouseLeave="document.getElementsByClassName('menu-text')[0].style.opacity=0">
+        <span class="menu-text">Menu</span>
+        <hr>
+    </header > <br>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+        <br>
+        <hr><a href="Login.html">Espace Jeunes Diplômés</a><hr>
+    </div>
+    <div id="side" style="margin-right: 20px; margin-left: 20px; height:500px">
+    </div>
+    <br>
+    <div id="main" style="margin-right: 20px; margin-left: 20px;">
+    </div> 
+</body>
+</html>
