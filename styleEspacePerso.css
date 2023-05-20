@@ -1,0 +1,52 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+.image-container
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+  
+.menu-text
+{
+    position: absolute;
+    top: 30%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.image-container #menu 
+{
+    transition: opacity 0.3s;
+}   
+
+hr
+{
+    height:5px;
+    background:black;
+}
+
+fieldset
+{
+    width: 600px;
+}
+
+legend
+{
+    font-weight: bold;
+}
+
+h4
+{
+    text-decoration: underline;
+    font-style: italic;
+    transform: translateY(265%);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleEspacePerso.css">
+    <script src="../JavaScript/scriptEspacePerso.js" > </script>
+    <title>Espace Jeunes Diplômés</title>
+    <link rel="icon" type="image/x-icon" href="../Images/linkedOut.png">
+</head>
+<body>
+    <header class="image-container">
+        <img src="../Images/linkedOut.png" width="7.5%" height="7.5%" alt="linkedOUT">
+        <img src="../Images/singout.jpeg" id="signout" width="5%" height="5%" alt="signout" style="float:right" onClick="signout()" onMouseOver="document.getElementsByClassName('menu-text')[0].style.opacity=1" onMouseLeave="document.getElementsByClassName('menu-text')[0].style.opacity=0">
+        <span class="menu-text">Se déconnecter</span>
+        <hr>
+    </header> <br>
+    <center>
+        <fieldset id="dp">
+            <legend> Données Personnelles </legend>
+            <br>
+            <form>
+                <label id="id"> Nom et Prénom : <input type="text"> <input type="button" value="Haut" onClick="haut(document.getElementById('id'))" disabled> <input type="button" value="Bas" onClick="bas(document.getElementById('id'))" > <br > <br > </label>
+                <label id="bday"> Date de naissance : <input type="date"> <input type="button" value="Haut" onClick="haut(document.getElementById('bday'))" disabled> <input type="button" value="Bas" onClick="bas(document.getElementById('bday'))" > <br > <br > </label>
+                <label id="num"> Numéro téléphonique : <input type="number" length="8"> <input type="button" value="Haut" onClick="haut(document.getElementById('num'))" > <input type="button" value="Bas" onClick="bas(document.getElementById('num'))" > <br > <br > </label>
+                <label id="mail"> E-mail : <input type="email"> <input type="button" value="Haut" onClick="haut(document.getElementById('mail'))" > <input type="button" value="Bas" onClick="bas(document.getElementById('mail'))" > <br > <br > </label>
+                <label id="add">Adresse : <input type="textarea" row="5" col="50"> <input type="button" value="Haut" onClick="haut(document.getElementById('add'))" > <input type="button" value="Bas" onClick="bas(document.getElementById('add'))" disabled> <br > <br > </label>
+            </form>
+        </fieldset>
+        <br>
+        <fieldset id="rbad">
+            <legend> Rubriques Additionnelles </legend>
+            <br>
+            <input type="button" value="Certification(s)" onClick="ajouterrbad(this)"> &ensp;
+            <input type="button" value="Stage(s)" onClick="ajouterrbad(this)"> &ensp;
+            <input type="button" value="Diplôme(s)" onClick="ajouterrbad(this)" > <br > <br> <br>
+            D'autres rubriques que vous souhaiterez ajouter : <input type="text" id="aj"> <input type="button" value="Ajouter" onclick="ajouter()" > <br > <br>
+        </fieldset>
+        <br>
+        <fieldset id="mef" style="height:150px;">
+            <legend> Mise en forme de votre CV </legend>
+            <br>
+            <input type="button" value="Couleur du fond" onClick="ajouterrbad(this)"> &ensp;
+            <input type="button" value="Couleur de la police" onClick="ajouterrbad(this)"> &ensp;
+            <input type="button" value="Taille de la police" onClick="ajouterrbad(this)"> &ensp;
+            <input type="checkbox" id="gras"> Mise en gras <br> <br>
+            <h4 id="nb">N.B : Veuillez entrer les couleurs en anglais !</h4> <br>
+        </fieldset>
+        <br > <br > <input type="button" value="Aperçu de votre CV" id="ap" onClick="apercu()"> &ensp;
+        <input type="button" value="Soumettre votre CV" id="soum" onClick="envoyer()" disabled> <br > <br>
+    </center>
+</body>
+</html>
